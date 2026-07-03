@@ -1,26 +1,112 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import 'tailwindcss';
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-accent: #e2761c;
+  --color-accent-d: #c6791f;
+  --color-ink: #2c3138;
+  --color-ink-2: #5b626b;
+  --color-line: #e8eaed;
+  --color-panel: #f6f7f8;
+  --font-archivo: var(--font-archivo-var);
+  --font-manrope: var(--font-manrope-var);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  color: var(--color-ink);
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(226, 118, 28, 0.22);
+}
+
+/* ── Animations ── */
+
+@keyframes acc-sweep {
+  0% {
+    background-position: -120% 0;
+  }
+  100% {
+    background-position: 220% 0;
+  }
+}
+
+@keyframes emc-rise {
+  from {
+    transform: translateY(22px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes emc-rise-node {
+  from {
+    transform: translateY(16px) scale(0.94);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes emc-draw {
+  from {
+    width: 0;
+  }
+  to {
+    width: 88%;
+  }
+}
+
+/* ── Reveal System ── */
+
+.reveal-target {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 0.7s cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.reveal-target.revealed {
+  opacity: 1;
+  transform: none;
+}
+
+.chain-node {
+  opacity: 0;
+  transform: translateY(16px) scale(0.94);
+  transition:
+    opacity 0.6s cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.chain-node.revealed {
+  opacity: 1;
+  transform: none;
+}
+
+.chain-fill {
+  width: 0;
+  transition: width 1.7s cubic-bezier(0.4, 0, 0.1, 1);
+}
+
+.chain-fill.revealed {
+  width: 88%;
 }

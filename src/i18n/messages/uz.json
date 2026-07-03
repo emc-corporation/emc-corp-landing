@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "title": "EMC — Brendlangan korporativ to\u2018qimachilik, tayyor holda",
+    "description": "Korporativ to\u2018qimachilik ishlab chiqarish, brending va qadoqlash: kepka, futbolka, polo, forma. To\u2018liq tsikl — g\u2018oyadan yetkazib berishgacha."
+  },
+  "nav": {
+    "products": "Mahsulotlar",
+    "cycle": "To\u2018liq tsikl",
+    "why": "Nega biz",
+    "cta": "Ariza qoldirish"
+  },
+  "hero": {
+    "eyebrow": "Korporativ to\u2018qimachilik — tayyor holda",
+    "h1": "Jamoangiz uchun brendlangan kiyim — g\u2018oyadan qadoqlashgacha",
+    "sub": "EMC korporativ to\u2018qimachilikni ishlab chiqaradi, brendlaydi va qadoqlaydi: kepka, futbolka, polo va forma. Butun tsikl — ishlab chiqarish, logotip tushirish, sifat nazorati, qadoqlash va logistika — bizning zimmamizda.",
+    "cta": "Ariza qoldirish",
+    "secondary": "Qanday ishlaymiz →",
+    "badgeTop": "5 bosqich",
+    "badgeBottom": "tayyor holda"
+  },
+  "prod": {
+    "eyebrow": "Biz nima qilamiz",
+    "h2": "Korporativ kiyim liniyasi",
+    "sub": "Buyurtmangizga ko\u2018ra tikamiz va brendlaymiz — istalgan tiraj, rang va mato zichligi.",
+    "items": {
+      "0": { "name": "Kepkalar", "tag": "bosh kiyim", "desc": "Beysbolka, snepbek va treker — logotip tikilgan yoki bosilgan holda." },
+      "1": { "name": "Futbolkalar", "tag": "oddiy", "desc": "Paxta va sintetika — istalgan zichlik, rang va bichim brendingiz uchun." },
+      "2": { "name": "Polo", "tag": "klassik", "desc": "Klassik va streych — ofis, savdo va tadbirlar uchun." },
+      "3": { "name": "Forma", "tag": "ish kiyimi", "desc": "Ishchi va korporativ kiyim — vazifaga mos komplektlar." }
+    }
+  },
+  "cycle": {
+    "eyebrow": "To\u2018liq tsikl — tayyor holda",
+    "h2": "Besh bosqich bizning zimmamizda",
+    "sub": "Siz vazifa qo\u2018yasiz — biz loyihani xomashyo xarididan tayyor qadoqlangan partiyagacha olib boramiz. Bitta pudratchi, bitta shartnoma, to\u2018liq nazorat."
+  },
+  "stages": {
+    "0": { "title": "Ishlab chiqarish", "desc": "Mato sotib olamiz va kerakli sifat, rang va o\u2018lchamda tikamiz." },
+    "1": { "title": "Brending", "desc": "Logotip tushiramiz: bosma, tikuv, shelkografiya — brend uslubida." },
+    "2": { "title": "Sifat nazorati", "desc": "Har bir partiyani tekshiramiz. Brak mijozga yetib bormaydi." },
+    "3": { "title": "Qadoqlash", "desc": "Qadoqlaymiz va markalaymiz — partiya tarqatish yoki jo\u2018natishga tayyor." },
+    "4": { "title": "Logistika", "desc": "Tayyor qadoqlangan partiyani omboringizga yoki tarqatish nuqtalariga yetkazamiz." }
+  },
+  "why": {
+    "eyebrow": "Nega EMC",
+    "h2": "Beshta o\u2018rniga bitta pudratchi",
+    "sub": "Fabrika, bosmaxona, ombor va logistikani o\u2018zingiz yig\u2018ishingiz shart emas. Bularning bari EMC ichida.",
+    "items": {
+      "0": { "title": "Hammasi tayyor holda", "desc": "Butun tsikl uchun bitta shartnoma va bitta aloqa nuqtasi — xariddan qadoqlashgacha." },
+      "1": { "title": "Sifat nazorati", "desc": "Har bosqichda audit. Faqat tekshiruvdan o\u2018tganini jo\u2018natamiz." },
+      "2": { "title": "Muddatlar loyihaga mos", "desc": "Ishlab chiqarishni sanalaringizga moslab rejalaymiz — tirajdan tarqatishgacha uzilishsiz." },
+      "3": { "title": "Istalgan hajm", "desc": "Sinov partiyasidan yirik tirajgacha — sifatni saqlab." }
+    }
+  },
+  "form": {
+    "eyebrow": "Ariza qoldirish",
+    "h2": "Vazifangizni ayting — taklif tayyorlaymiz",
+    "sub": "Ish kuni davomida javob beramiz, tiraj va muddatlarni hisoblaymiz.",
+    "name": "Ism",
+    "namePh": "Sizga qanday murojaat qilaylik",
+    "phone": "Telefon",
+    "phonePh": "+998 90 000-00-00",
+    "company": "Kompaniya",
+    "companyPh": "Kompaniya nomi",
+    "interest": "Nima qiziqtiradi",
+    "interestOptions": {
+      "0": "Kepkalar",
+      "1": "Futbolkalar",
+      "2": "Polo",
+      "3": "Forma",
+      "4": "Kompleks buyurtma"
+    },
+    "comment": "Izoh",
+    "commentPh": "Tiraj, muddat, brending bo\u2018yicha istaklar",
+    "submit": "Arizani yuborish",
+    "successTitle": "Ariza yuborildi",
+    "successText": "Rahmat! Ish kuni davomida bog\u2018lanamiz va hisob-kitob tayyorlaymiz."
+  },
+  "contacts": {
+    "tagline": "To\u2018liq tsiklli korporativ to\u2018qimachilik ishlab chiqarish va brending.",
+    "phoneLabel": "Telefon",
+    "mailLabel": "Pochta",
+    "addrLabel": "Manzil",
+    "addrValue": "Toshkent sh. · ishlab chiqarish va ofis"
+  },
+  "footer": {
+    "copyright": "© 2026 EMC · Brendlangan to\u2018qimachilik, tayyor holda",
+    "chain": "Ishlab chiqarish · Brending · Audit · Qadoqlash · Logistika"
+  }
+}

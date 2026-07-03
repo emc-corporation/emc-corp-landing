@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "title": "EMC — Branded Corporate Textiles, Turnkey",
+    "description": "Manufacturing, branding and packaging of corporate textiles: caps, t-shirts, polos, uniforms. Full cycle — from idea to delivery."
+  },
+  "nav": {
+    "products": "Products",
+    "cycle": "Full cycle",
+    "why": "Why us",
+    "cta": "Request a quote"
+  },
+  "hero": {
+    "eyebrow": "Corporate textiles, done end-to-end",
+    "h1": "Branded apparel for your team — from idea to packaging",
+    "sub": "EMC manufactures, brands and packs corporate textiles: caps, t-shirts, polos and uniforms. The whole cycle — production, logo application, quality audit, packaging and logistics — is on us.",
+    "cta": "Request a quote",
+    "secondary": "How we work →",
+    "badgeTop": "5 stages",
+    "badgeBottom": "end-to-end"
+  },
+  "prod": {
+    "eyebrow": "What we do",
+    "h2": "Corporate apparel line",
+    "sub": "We sew and brand to order — any run, colour and fabric weight.",
+    "items": {
+      "0": { "name": "Caps", "tag": "headwear", "desc": "Baseball caps, snapbacks and truckers with embroidered or printed logos." },
+      "1": { "name": "T-shirts", "tag": "basic", "desc": "Cotton and synthetics — any weight, colour and fit for your brand." },
+      "2": { "name": "Polos", "tag": "smart", "desc": "Classic and stretch — for office, retail and events." },
+      "3": { "name": "Uniforms", "tag": "workwear", "desc": "Workwear and corporate outfits in ready sets." }
+    }
+  },
+  "cycle": {
+    "eyebrow": "The full cycle, turnkey",
+    "h2": "Five stages on our side",
+    "sub": "You set the task — we run the project from raw materials to a finished, packed batch. One contractor, one contract, full control."
+  },
+  "stages": {
+    "0": { "title": "Manufacturing", "desc": "We source fabric and sew products in the right quality, colour and size." },
+    "1": { "title": "Branding", "desc": "We apply your logo: print, embroidery, silkscreen — on brand." },
+    "2": { "title": "Quality audit", "desc": "We inspect every batch. Defects never reach the client." },
+    "3": { "title": "Packaging", "desc": "We pack and label — the batch is ready to hand out or ship." },
+    "4": { "title": "Logistics", "desc": "We deliver the finished, packed batch to your warehouse or pickup points." }
+  },
+  "why": {
+    "eyebrow": "Why EMC",
+    "h2": "One contractor instead of five",
+    "sub": "No need to assemble a chain of factory, print shop, warehouse and logistics. It is all already inside EMC.",
+    "items": {
+      "0": { "title": "End-to-end", "desc": "One contract and one point of contact for the whole cycle — from sourcing to packaging." },
+      "1": { "title": "Quality control", "desc": "Audits at every step. We ship only what passed inspection." },
+      "2": { "title": "Deadlines that fit", "desc": "We plan production around your dates — from print run to handout, no slips." },
+      "3": { "title": "Any volume", "desc": "From a trial batch to large runs without losing quality." }
+    }
+  },
+  "form": {
+    "eyebrow": "Request a quote",
+    "h2": "Tell us the task — we will put together an offer",
+    "sub": "We reply within one business day and estimate the run and timeline for your project.",
+    "name": "Name",
+    "namePh": "How should we address you",
+    "phone": "Phone",
+    "phonePh": "+998 90 000-00-00",
+    "company": "Company",
+    "companyPh": "Company name",
+    "interest": "What you need",
+    "interestOptions": {
+      "0": "Caps",
+      "1": "T-shirts",
+      "2": "Polos",
+      "3": "Uniforms",
+      "4": "Full package"
+    },
+    "comment": "Comment",
+    "commentPh": "Quantity, timeline, branding notes",
+    "submit": "Send request",
+    "successTitle": "Request sent",
+    "successText": "Thank you! We will get in touch within a business day with a quote."
+  },
+  "contacts": {
+    "tagline": "Full-cycle corporate textile manufacturing and branding.",
+    "phoneLabel": "Phone",
+    "mailLabel": "Email",
+    "addrLabel": "Address",
+    "addrValue": "Tashkent · production & office"
+  },
+  "footer": {
+    "copyright": "© 2026 EMC · Branded textiles, turnkey",
+    "chain": "Manufacturing · Branding · Audit · Packaging · Logistics"
+  }
+}
