@@ -1,7 +1,6 @@
 'use client';
 
-import { useLocale } from 'next-intl';
-import { useRouter, usePathname } from 'next/navigation';
+import { useLocaleSwitch } from '@/components/LocaleProvider';
 
 const LANGS = [
   { code: 'ru', label: 'РУ' },
@@ -10,27 +9,19 @@ const LANGS = [
 ] as const;
 
 export function LanguageSwitcher() {
-  const locale = useLocale();
-  const router = useRouter();
-  const pathname = usePathname();
-
-  function switchLocale(code: string) {
-    const segments = pathname.split('/');
-    segments[1] = code;
-    router.push(segments.join('/'));
-  }
+  const { locale, switchLocale } = useLocaleSwitch();
 
   return (
-    <div className="flex gap-[3px] rounded-[9px] border border-line bg-panel p-[3px]">
+    <div className="border-line bg-panel flex gap-0.75 rounded-[9px] border p-0.75">
       {LANGS.map((l) => (
         <button
           key={l.code}
           type="button"
           onClick={() => switchLocale(l.code)}
-          className={`cursor-pointer rounded-md px-[11px] py-1.5 font-manrope text-[12.5px] font-bold tracking-[.03em] transition-all duration-[180ms] ${
+          className={`font-manrope cursor-pointer rounded-md px-2.75 py-1.5 text-[12.5px] font-bold tracking-[.03em] transition-all duration-180 ${
             locale === l.code
               ? 'bg-accent text-white'
-              : 'bg-transparent text-ink-2 hover:text-ink'
+              : 'text-ink-2 hover:text-ink bg-transparent'
           }`}
         >
           {l.label}

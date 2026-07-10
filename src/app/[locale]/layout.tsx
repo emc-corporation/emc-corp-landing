@@ -1,11 +1,17 @@
 import type { ReactNode } from 'react';
 import type { Metadata } from 'next';
 import { Archivo, Manrope } from 'next/font/google';
-import { NextIntlClientProvider } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
+import { LocaleProvider } from '@/components/LocaleProvider';
 import { getOrganizationSchema } from '@/lib/structured-data';
 import '../globals.css';
+
+import ruMessages from '@/i18n/messages/ru.json';
+import uzMessages from '@/i18n/messages/uz.json';
+import enMessages from '@/i18n/messages/en.json';
+
+const allMessages = { ru: ruMessages, uz: uzMessages, en: enMessages } as const;
 
 const archivo = Archivo({
   subsets: ['latin', 'latin-ext'],
@@ -65,7 +71,6 @@ export async function generateMetadata({
 
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
-  const messages = (await import(`@/i18n/messages/${locale}.json`)).default;
 
   return (
     <html lang={locale} className={`${archivo.variable} ${manrope.variable}`}>
@@ -78,9 +83,12 @@ export default async function LocaleLayout({ children, params }: Props) {
         />
       </head>
       <body>
-        <NextIntlClientProvider locale={locale} messages={messages}>
+        <LocaleProvider
+          initialLocale={locale as 'ru' | 'uz' | 'en'}
+          allMessages={allMessages}
+        >
           {children}
-        </NextIntlClientProvider>
+        </LocaleProvider>
       </body>
     </html>
   );
