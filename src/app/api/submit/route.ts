@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server';
 
 export async function POST(req: Request) {
-  const { name, phone, email, company, interest, volume, comment } = await req.json();
+  const { name, phone, email, company, interest, volume, comment } =
+    await req.json();
 
   const token = process.env.TELEGRAM_BOT_TOKEN;
   const chatId = process.env.TELEGRAM_CHAT_ID;
@@ -27,21 +28,23 @@ export async function POST(req: Request) {
     .filter(Boolean)
     .join('\n');
 
-  const res = await fetch(
-    `https://api.telegram.org/bot${token}/sendMessage`,
-    {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        chat_id: chatId,
-        text,
-        parse_mode: 'Markdown',
-      }),
-    },
-  );
+  const res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      chat_id: chatId,
+      text,
+      parse_mode: 'Markdown',
+    }),
+  });
 
   if (!res.ok) {
-    return NextResponse.json({ error: 'Telegram error' }, { status: 502 });
+    const errBody = await res.text();
+    console.error('Telegram error:', res.status, errBody);
+    return NextResponse.json(
+      { error: 'Telegram error', detail: errBody },
+      { status: 502 },
+    );
   }
 
   return NextResponse.json({ ok: true });
