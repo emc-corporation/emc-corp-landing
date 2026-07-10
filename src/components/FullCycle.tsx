@@ -7,15 +7,15 @@ import { SectionHeading } from '@/components/ui/SectionHeading';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { useChainReveal } from '@/hooks/useChainReveal';
 import { STAGE_META } from '@/lib/constants';
-import { Factory, Stamp, BadgeCheck, Package, Truck } from '@/components/icons';
+import { ClipboardList, Palette, Factory, CreditCard, Truck } from '@/components/icons';
 import type { LucideIcon } from 'lucide-react';
 import { useRef, useState, useEffect, useCallback } from 'react';
 
 const STAGE_ICONS: Record<string, LucideIcon> = {
+  'clipboard-list': ClipboardList,
+  palette: Palette,
   factory: Factory,
-  stamp: Stamp,
-  'badge-check': BadgeCheck,
-  package: Package,
+  'credit-card': CreditCard,
   truck: Truck,
 };
 

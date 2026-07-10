@@ -17,8 +17,10 @@ import toast from 'react-hot-toast';
 interface FormData {
   name: string;
   phone: string;
+  email: string;
   company: string;
   interestIdx: number;
+  volumeIdx: number;
   comment: string;
 }
 
@@ -31,6 +33,10 @@ export function ContactForm() {
     t(`form.interestOptions.${i}`),
   );
 
+  const volumeOptions = [0, 1, 2, 3, 4].map((i) =>
+    t(`form.volumeOptions.${i}`),
+  );
+
   const {
     register,
     handleSubmit,
@@ -41,8 +47,10 @@ export function ContactForm() {
     defaultValues: {
       name: '',
       phone: '',
+      email: '',
       company: '',
       interestIdx: 0,
+      volumeIdx: 0,
       comment: '',
     },
   });
@@ -52,8 +60,10 @@ export function ContactForm() {
       await submitApplication({
         name: data.name,
         phone: data.phone,
+        email: data.email,
         company: data.company,
         interest: interestOptions[data.interestIdx],
+        volume: volumeOptions[data.volumeIdx],
         comment: data.comment,
       });
       reset();
@@ -62,6 +72,9 @@ export function ContactForm() {
       toast.error(t('form.errorText'));
     }
   }
+
+  const inputClass =
+    'focus:border-accent rounded-lg border border-white/16 bg-white/6 px-3.75 py-3.25 text-[15px] text-white transition-colors duration-200 outline-none placeholder:text-white/40';
 
   return (
     <footer id="contact" className="bg-[#2b2f35] text-[#e9ebee]">
@@ -81,7 +94,7 @@ export function ContactForm() {
               <input
                 {...register('name', { required: true })}
                 placeholder={t('form.namePh')}
-                className="focus:border-accent rounded-lg border border-white/16 bg-white/6 px-3.75 py-3.25 text-[15px] text-white transition-colors duration-200 outline-none placeholder:text-white/40"
+                className={inputClass}
               />
             </label>
 
@@ -105,12 +118,24 @@ export function ContactForm() {
 
             <label className="flex flex-col gap-1.75">
               <span className="text-[12.5px] font-semibold tracking-[.02em] text-[#aeb4bb]">
+                {t('form.email')}
+              </span>
+              <input
+                type="email"
+                {...register('email')}
+                placeholder={t('form.emailPh')}
+                className={inputClass}
+              />
+            </label>
+
+            <label className="flex flex-col gap-1.75">
+              <span className="text-[12.5px] font-semibold tracking-[.02em] text-[#aeb4bb]">
                 {t('form.company')}
               </span>
               <input
                 {...register('company')}
                 placeholder={t('form.companyPh')}
-                className="focus:border-accent rounded-lg border border-white/16 bg-white/6 px-3.75 py-3.25 text-[15px] text-white transition-colors duration-200 outline-none placeholder:text-white/40"
+                className={inputClass}
               />
             </label>
 
@@ -127,6 +152,19 @@ export function ContactForm() {
               )}
             />
 
+            <Controller
+              name="volumeIdx"
+              control={control}
+              render={({ field }) => (
+                <CustomSelect
+                  label={t('form.volume')}
+                  options={volumeOptions}
+                  value={field.value}
+                  onChange={field.onChange}
+                />
+              )}
+            />
+
             <label className="col-span-full flex flex-col gap-1.75">
               <span className="text-[12.5px] font-semibold tracking-[.02em] text-[#aeb4bb]">
                 {t('form.comment')}
@@ -135,7 +173,7 @@ export function ContactForm() {
                 rows={3}
                 {...register('comment')}
                 placeholder={t('form.commentPh')}
-                className="resize-vertical focus:border-accent rounded-lg border border-white/16 bg-white/6 px-3.75 py-3.25 text-[15px] text-white transition-colors duration-200 outline-none placeholder:text-white/40"
+                className={`resize-vertical ${inputClass}`}
               />
             </label>
 

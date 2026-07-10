@@ -6,10 +6,10 @@ export const PRODUCT_IMAGES = [
 ] as const;
 
 export const STAGE_META = [
-  { n: '01', icon: 'factory' },
-  { n: '02', icon: 'stamp' },
-  { n: '03', icon: 'badge-check' },
-  { n: '04', icon: 'package' },
+  { n: '01', icon: 'clipboard-list' },
+  { n: '02', icon: 'palette' },
+  { n: '03', icon: 'factory' },
+  { n: '04', icon: 'credit-card' },
   { n: '05', icon: 'truck' },
 ] as const;
 

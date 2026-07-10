@@ -5,7 +5,7 @@
   },
   "nav": {
     "products": "Mahsulotlar",
-    "cycle": "To\u2018liq tsikl",
+    "cycle": "Qanday ishlaymiz",
     "why": "Nega biz",
     "cta": "Ariza qoldirish"
   },
@@ -13,6 +13,8 @@
     "eyebrow": "Korporativ to\u2018qimachilik — tayyor holda",
     "h1": "Jamoangiz uchun brendlangan kiyim — g\u2018oyadan qadoqlashgacha",
     "sub": "EMC korporativ to\u2018qimachilikni ishlab chiqaradi, brendlaydi va qadoqlaydi: kepka, futbolka, polo va forma. Butun tsikl — ishlab chiqarish, logotip tushirish, sifat nazorati, qadoqlash va logistika — bizning zimmamizda.",
+    "segment": "HR bo\u2018limlari, marketologlar, tadbir agentliklari va xarid bo\u2018limlari uchun",
+    "moq": "50 donadan",
     "cta": "Ariza qoldirish",
     "secondary": "Qanday ishlaymiz →",
     "badgeTop": "5 bosqich",
@@ -21,7 +23,7 @@
   "prod": {
     "eyebrow": "Biz nima qilamiz",
     "h2": "Korporativ kiyim liniyasi",
-    "sub": "Buyurtmangizga ko\u2018ra tikamiz va brendlaymiz — istalgan tiraj, rang va mato zichligi.",
+    "sub": "Buyurtmangizga ko\u2018ra tikamiz va brendlaymiz — 50 donadan, istalgan rang va mato zichligi.",
     "items": {
       "0": { "name": "Kepkalar", "tag": "bosh kiyim", "desc": "Beysbolka, snepbek va treker — logotip tikilgan yoki bosilgan holda." },
       "1": { "name": "Futbolkalar", "tag": "oddiy", "desc": "Paxta va sintetika — istalgan zichlik, rang va bichim brendingiz uchun." },
@@ -29,17 +31,28 @@
       "3": { "name": "Forma", "tag": "ish kiyimi", "desc": "Ishchi va korporativ kiyim — vazifaga mos komplektlar." }
     }
   },
+  "trust": {
+    "eyebrow": "Bizga ishonishadi",
+    "h2": "O\u2018zlari gapiradigan raqamlar",
+    "sub": "O\u2018zbekiston bo\u2018ylab kompaniyalar bilan ishlaymiz — startaplardan yirik korporatsiyalargacha.",
+    "stats": {
+      "0": { "value": "8+", "label": "yil bozorda" },
+      "1": { "value": "200+", "label": "kompaniya-mijoz" },
+      "2": { "value": "500 000+", "label": "dona ishlab chiqarilgan" },
+      "3": { "value": "98%", "label": "buyurtmalar o\u2018z vaqtida" }
+    }
+  },
   "cycle": {
-    "eyebrow": "To\u2018liq tsikl — tayyor holda",
-    "h2": "Besh bosqich bizning zimmamizda",
-    "sub": "Siz vazifa qo\u2018yasiz — biz loyihani xomashyo xarididan tayyor qadoqlangan partiyagacha olib boramiz. Bitta pudratchi, bitta shartnoma, to\u2018liq nazorat."
+    "eyebrow": "Siz bilan qanday ishlaymiz",
+    "h2": "Arizadan tayyor partiyagacha yo\u2018lingiz",
+    "sub": "Siz ariza qoldirasiz — biz loyihani o\u2018z zimmamizga olamiz. Bitta menejer, shaffof jarayon, kutilmagan holatlar yo\u2018q."
   },
   "stages": {
-    "0": { "title": "Ishlab chiqarish", "desc": "Mato sotib olamiz va kerakli sifat, rang va o\u2018lchamda tikamiz." },
-    "1": { "title": "Brending", "desc": "Logotip tushiramiz: bosma, tikuv, shelkografiya — brend uslubida." },
-    "2": { "title": "Sifat nazorati", "desc": "Har bir partiyani tekshiramiz. Brak mijozga yetib bormaydi." },
-    "3": { "title": "Qadoqlash", "desc": "Qadoqlaymiz va markalaymiz — partiya tarqatish yoki jo\u2018natishga tayyor." },
-    "4": { "title": "Logistika", "desc": "Tayyor qadoqlangan partiyani omboringizga yoki tarqatish nuqtalariga yetkazamiz." }
+    "0": { "title": "Ariza va brif", "desc": "Siz ariza qoldirasiz — biz ish kuni davomida bog\u2018lanamiz, hajm, muddat va istaklarni aniqlaymiz." },
+    "1": { "title": "Maket va kelishuv", "desc": "Logotipingiz bilan maket tayyorlaymiz, ranglar, mato va tirajni kelishamiz. Tuzatishlar — bepul." },
+    "2": { "title": "Ishlab chiqarish", "desc": "Ishga tushiramiz: tikamiz, logotip tushiramiz, har bir partiyani tekshiramiz." },
+    "3": { "title": "To\u2018lov va hujjatlar", "desc": "Shartnoma asosida ishlaymiz. 50% oldindan to\u2018lov, qolgani — jo\u2018natishdan oldin. Buxgalteriya uchun to\u2018liq hujjatlar." },
+    "4": { "title": "Yetkazib berish", "desc": "Tayyor partiyani omboringizga yoki tarqatish nuqtalariga yetkazamiz. Standart muddat — 10–15 ish kuni." }
   },
   "why": {
     "eyebrow": "Nega EMC",
@@ -47,19 +60,21 @@
     "sub": "Fabrika, bosmaxona, ombor va logistikani o\u2018zingiz yig\u2018ishingiz shart emas. Bularning bari EMC ichida.",
     "items": {
       "0": { "title": "Hammasi tayyor holda", "desc": "Butun tsikl uchun bitta shartnoma va bitta aloqa nuqtasi — xariddan qadoqlashgacha." },
-      "1": { "title": "Sifat nazorati", "desc": "Har bosqichda audit. Faqat tekshiruvdan o\u2018tganini jo\u2018natamiz." },
-      "2": { "title": "Muddatlar loyihaga mos", "desc": "Ishlab chiqarishni sanalaringizga moslab rejalaymiz — tirajdan tarqatishgacha uzilishsiz." },
-      "3": { "title": "Istalgan hajm", "desc": "Sinov partiyasidan yirik tirajgacha — sifatni saqlab." }
+      "1": { "title": "Sifat nazorati", "desc": "Har bosqichda audit: mato kirish nazorati, tikuv, brending va qadoqlash tekshiruvi. Brak normasi — 1% dan kam." },
+      "2": { "title": "Muddatlar loyihaga mos", "desc": "Standart tiraj — 10–15 ish kuni. Ishlab chiqarishni sanalaringizga moslab rejalaymiz, muddatlarni shartnomada belgilaymiz." },
+      "3": { "title": "Istalgan hajm", "desc": "Minimal buyurtma — 50 donadan. Sifatni saqlab yirik tirajlargacha kengaytira olamiz." }
     }
   },
   "form": {
     "eyebrow": "Ariza qoldirish",
     "h2": "Vazifangizni ayting — taklif tayyorlaymiz",
-    "sub": "Ish kuni davomida javob beramiz, tiraj va muddatlarni hisoblaymiz.",
+    "sub": "Ish kuni davomida javob beramiz: qo\u2018ng\u2018iroq qilamiz yoki messenjerda yozamiz, tafsilotlarni aniqlaymiz va hisob-kitob tayyorlaymiz. Imkon bo\u2018lsa, logotipni vektor formatda tayyorlab qo\u2018ying.",
     "name": "Ism",
     "namePh": "Sizga qanday murojaat qilaylik",
     "phone": "Telefon",
     "phonePh": "+998 90 000-00-00",
+    "email": "Email",
+    "emailPh": "email@company.com",
     "company": "Kompaniya",
     "companyPh": "Kompaniya nomi",
     "interest": "Nima qiziqtiradi",
@@ -70,8 +85,16 @@
       "3": "Forma",
       "4": "Kompleks buyurtma"
     },
+    "volume": "Taxminiy tiraj",
+    "volumeOptions": {
+      "0": "50–100 dona",
+      "1": "100–300 dona",
+      "2": "300–1 000 dona",
+      "3": "1 000–5 000 dona",
+      "4": "5 000+ dona"
+    },
     "comment": "Izoh",
-    "commentPh": "Tiraj, muddat, brending bo\u2018yicha istaklar",
+    "commentPh": "Muddat, brending bo\u2018yicha istaklar",
     "submit": "Arizani yuborish",
     "successTitle": "Ariza yuborildi",
     "successText": "Rahmat! Ish kuni davomida bog\u2018lanamiz va hisob-kitob tayyorlaymiz.",

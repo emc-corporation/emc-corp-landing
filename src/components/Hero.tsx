@@ -60,7 +60,16 @@ export function Hero() {
             {t('sub')}
           </p>
 
-          <div className="mt-8.5 flex flex-wrap gap-3.5">
+          <div className="mt-4 flex flex-wrap items-center gap-4">
+            <span className="rounded-full border border-white/15 bg-white/6 px-4 py-1.5 text-[13.5px] text-[#c9cdd2]">
+              {t('segment')}
+            </span>
+            <span className="text-accent rounded-full bg-[rgba(226,118,28,.12)] px-4 py-1.5 text-[13.5px] font-semibold">
+              {t('moq')}
+            </span>
+          </div>
+
+          <div className="mt-7 flex flex-wrap gap-3.5">
             <AccentButton href="#contact">{t('cta')}</AccentButton>
             <OutlineButton href="#cycle">{t('secondary')}</OutlineButton>
           </div>

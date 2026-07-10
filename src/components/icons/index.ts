@@ -14,4 +14,7 @@ export {
   MapPin,
   ChevronDown,
   Check,
+  ClipboardList,
+  Palette,
+  CreditCard,
 } from 'lucide-react';

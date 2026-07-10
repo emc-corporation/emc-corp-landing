@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 export async function POST(req: Request) {
-  const { name, phone, company, interest, comment } = await req.json();
+  const { name, phone, email, company, interest, volume, comment } = await req.json();
 
   const token = process.env.TELEGRAM_BOT_TOKEN;
   const chatId = process.env.TELEGRAM_CHAT_ID;
@@ -18,8 +18,10 @@ export async function POST(req: Request) {
     ``,
     `*Имя:* ${name}`,
     `*Телефон:* ${phone}`,
+    email ? `*Email:* ${email}` : null,
     company ? `*Компания:* ${company}` : null,
     interest ? `*Интерес:* ${interest}` : null,
+    volume ? `*Тираж:* ${volume}` : null,
     comment ? `*Комментарий:* ${comment}` : null,
   ]
     .filter(Boolean)

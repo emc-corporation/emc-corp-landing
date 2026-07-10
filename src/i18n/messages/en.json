@@ -5,7 +5,7 @@
   },
   "nav": {
     "products": "Products",
-    "cycle": "Full cycle",
+    "cycle": "How we work",
     "why": "Why us",
     "cta": "Request a quote"
   },
@@ -13,6 +13,8 @@
     "eyebrow": "Corporate textiles, done end-to-end",
     "h1": "Branded apparel for your team — from idea to packaging",
     "sub": "EMC manufactures, brands and packs corporate textiles: caps, t-shirts, polos and uniforms. The whole cycle — production, logo application, quality audit, packaging and logistics — is on us.",
+    "segment": "For HR teams, marketers, event agencies and procurement",
+    "moq": "from 50 units",
     "cta": "Request a quote",
     "secondary": "How we work →",
     "badgeTop": "5 stages",
@@ -21,7 +23,7 @@
   "prod": {
     "eyebrow": "What we do",
     "h2": "Corporate apparel line",
-    "sub": "We sew and brand to order — any run, colour and fabric weight.",
+    "sub": "We sew and brand to order — from 50 units, any colour and fabric weight.",
     "items": {
       "0": { "name": "Caps", "tag": "headwear", "desc": "Baseball caps, snapbacks and truckers with embroidered or printed logos." },
       "1": { "name": "T-shirts", "tag": "basic", "desc": "Cotton and synthetics — any weight, colour and fit for your brand." },
@@ -29,17 +31,28 @@
       "3": { "name": "Uniforms", "tag": "workwear", "desc": "Workwear and corporate outfits in ready sets." }
     }
   },
+  "trust": {
+    "eyebrow": "Trusted by",
+    "h2": "Numbers that speak for themselves",
+    "sub": "We work with companies across Uzbekistan — from startups to large corporations.",
+    "stats": {
+      "0": { "value": "8+", "label": "years in business" },
+      "1": { "value": "200+", "label": "corporate clients" },
+      "2": { "value": "500,000+", "label": "units produced" },
+      "3": { "value": "98%", "label": "orders on time" }
+    }
+  },
   "cycle": {
-    "eyebrow": "The full cycle, turnkey",
-    "h2": "Five stages on our side",
-    "sub": "You set the task — we run the project from raw materials to a finished, packed batch. One contractor, one contract, full control."
+    "eyebrow": "How it works for you",
+    "h2": "Your path from request to finished batch",
+    "sub": "You submit a request — we take the project from there. One manager, a transparent process, no surprises."
   },
   "stages": {
-    "0": { "title": "Manufacturing", "desc": "We source fabric and sew products in the right quality, colour and size." },
-    "1": { "title": "Branding", "desc": "We apply your logo: print, embroidery, silkscreen — on brand." },
-    "2": { "title": "Quality audit", "desc": "We inspect every batch. Defects never reach the client." },
-    "3": { "title": "Packaging", "desc": "We pack and label — the batch is ready to hand out or ship." },
-    "4": { "title": "Logistics", "desc": "We deliver the finished, packed batch to your warehouse or pickup points." }
+    "0": { "title": "Request & brief", "desc": "You submit a request — we get back within one business day to clarify volume, timeline and preferences." },
+    "1": { "title": "Mockup & approval", "desc": "We prepare a mockup with your logo, agree on colours, fabric and run size. Revisions are free." },
+    "2": { "title": "Production", "desc": "We launch production: sew, apply branding, and audit every batch." },
+    "3": { "title": "Payment & docs", "desc": "We work under contract. 50% prepayment, balance before shipment. Full document package for accounting." },
+    "4": { "title": "Delivery", "desc": "We deliver the finished batch to your warehouse or pickup points. Standard lead time — 10–15 business days." }
   },
   "why": {
     "eyebrow": "Why EMC",
@@ -47,19 +60,21 @@
     "sub": "No need to assemble a chain of factory, print shop, warehouse and logistics. It is all already inside EMC.",
     "items": {
       "0": { "title": "End-to-end", "desc": "One contract and one point of contact for the whole cycle — from sourcing to packaging." },
-      "1": { "title": "Quality control", "desc": "Audits at every step. We ship only what passed inspection." },
-      "2": { "title": "Deadlines that fit", "desc": "We plan production around your dates — from print run to handout, no slips." },
-      "3": { "title": "Any volume", "desc": "From a trial batch to large runs without losing quality." }
+      "1": { "title": "Quality control", "desc": "Audits at every step: incoming fabric inspection, sewing, branding and packaging checks. Defect rate under 1%." },
+      "2": { "title": "Deadlines that fit", "desc": "Standard run — 10–15 business days. We plan production around your dates and lock deadlines in the contract." },
+      "3": { "title": "Any volume", "desc": "Minimum order — from 50 units. We scale up to large runs without losing quality." }
     }
   },
   "form": {
     "eyebrow": "Request a quote",
     "h2": "Tell us the task — we will put together an offer",
-    "sub": "We reply within one business day and estimate the run and timeline for your project.",
+    "sub": "We reply within one business day: call or message you, clarify details and prepare a quote. Have your logo in vector format ready if possible.",
     "name": "Name",
     "namePh": "How should we address you",
     "phone": "Phone",
     "phonePh": "+998 90 000-00-00",
+    "email": "Email",
+    "emailPh": "email@company.com",
     "company": "Company",
     "companyPh": "Company name",
     "interest": "What you need",
@@ -70,8 +85,16 @@
       "3": "Uniforms",
       "4": "Full package"
     },
+    "volume": "Estimated quantity",
+    "volumeOptions": {
+      "0": "50–100 units",
+      "1": "100–300 units",
+      "2": "300–1,000 units",
+      "3": "1,000–5,000 units",
+      "4": "5,000+ units"
+    },
     "comment": "Comment",
-    "commentPh": "Quantity, timeline, branding notes",
+    "commentPh": "Timeline, branding notes",
     "submit": "Send request",
     "successTitle": "Request sent",
     "successText": "Thank you! We will get in touch within a business day with a quote.",
