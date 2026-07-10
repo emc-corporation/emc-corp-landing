@@ -74,7 +74,8 @@
     "commentPh": "Quantity, timeline, branding notes",
     "submit": "Send request",
     "successTitle": "Request sent",
-    "successText": "Thank you! We will get in touch within a business day with a quote."
+    "successText": "Thank you! We will get in touch within a business day with a quote.",
+    "errorText": "Failed to send the request. Please try again."
   },
   "contacts": {
     "tagline": "Full-cycle corporate textile manufacturing and branding.",

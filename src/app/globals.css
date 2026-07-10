@@ -110,3 +110,68 @@ body {
 .chain-fill.revealed {
   width: 88%;
 }
+
+/* ── Phone Input ── */
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0 15px;
+  transition: border-color 0.2s;
+}
+
+.phone-input:focus-within {
+  border-color: var(--color-accent);
+}
+
+.phone-input .PhoneInputCountry {
+  margin-right: 0;
+}
+
+.phone-input .PhoneInputCountryIcon {
+  width: 24px;
+  height: 18px;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: none;
+  background: none;
+}
+
+.phone-input .PhoneInputCountryIcon--border {
+  box-shadow: none;
+  background: none;
+}
+
+.phone-input .PhoneInputCountrySelectArrow {
+  border-color: #aeb4bb;
+  opacity: 1;
+  margin-left: 6px;
+}
+
+.phone-input .PhoneInputCountrySelect {
+  background: transparent;
+  color: white;
+}
+
+.phone-input .PhoneInputCountrySelect option {
+  background: #333941;
+  color: #e9ebee;
+}
+
+.phone-input input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 13px 0;
+  font-size: 15px;
+  color: white;
+}
+
+.phone-input input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}

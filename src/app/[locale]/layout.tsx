@@ -5,6 +5,7 @@ import { getTranslations } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { LocaleProvider } from '@/components/LocaleProvider';
 import { getOrganizationSchema } from '@/lib/structured-data';
+import { Toaster } from '@/components/ui/Toaster';
 import '../globals.css';
 
 import ruMessages from '@/i18n/messages/ru.json';
@@ -88,6 +89,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           allMessages={allMessages}
         >
           {children}
+          <Toaster />
         </LocaleProvider>
       </body>
     </html>

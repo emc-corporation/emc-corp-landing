@@ -74,7 +74,8 @@
     "commentPh": "Tiraj, muddat, brending bo\u2018yicha istaklar",
     "submit": "Arizani yuborish",
     "successTitle": "Ariza yuborildi",
-    "successText": "Rahmat! Ish kuni davomida bog\u2018lanamiz va hisob-kitob tayyorlaymiz."
+    "successText": "Rahmat! Ish kuni davomida bog\u2018lanamiz va hisob-kitob tayyorlaymiz.",
+    "errorText": "Arizani yuborib bo\u2018lmadi. Qaytadan urinib ko\u2018ring."
   },
   "contacts": {
     "tagline": "To\u2018liq tsiklli korporativ to\u2018qimachilik ishlab chiqarish va brending.",
