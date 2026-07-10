@@ -102,14 +102,6 @@ body {
   transform: none;
 }
 
-.chain-fill {
-  width: 0;
-  transition: width 1.7s cubic-bezier(0.4, 0, 0.1, 1);
-}
-
-.chain-fill.revealed {
-  width: 88%;
-}
 
 /* ── Phone Input ── */
 
